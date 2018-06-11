@@ -1,5 +1,5 @@
 <head>
-    <title>CivicTechYYC blockchain experiment 2</title>
+    <title>CivicTechYYC blockchain experiment 2 (v0.1)</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <style type="text/css">
     html {
@@ -8,7 +8,7 @@
     }
     body {
         margin: 0;
-        font: 15px/1.5 'Microsoft YaHei';
+        font: 15px/1.5 'Helvetica';
         line-height: 20px;
     }
 
@@ -16,6 +16,20 @@
         width:800; margin-top:10px; padding:10px; background-color:#ffffff; text-align:left;
         box-shadow:0px 0px 3px rgba(51,51,51,0.2);
     }
+    
+        .CacheMode {
+        width:800; margin-top:10px; padding:10px; background-color:#ffffff; text-align:left;
+        font: 15px/1.5 'Helvetica';
+        color: #000;
+    }
+    
+            .intro {
+        width:800; margin-top:10px; padding:10px; background-color:hsl(257, 44%, 45%); text-align:left;
+              text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        font: 15px/1.5 'Helvetica';
+        color: #ffffff;
+    }
+
 
     .oneReply {
         margin-top:5px;
@@ -28,6 +42,7 @@
         background-color:#ffffff;
         box-shadow:0px 0px 5px rgba(51,51,51,0.5);
         height: 120px;
+      border-top: 4px solid hsl(257, 44%, 45%);
     }
 
     .nav {
@@ -44,23 +59,23 @@
       margin-left: 15px;
       margin-right: 15px; 
       padding-bottom:25px;
-      font: 18px/0.5 'Microsoft YaHei';
+      font: 18px/0.5 'Helvetica';
       color:#949494;
       text-align: center;
     }
 
     .button:hover{
-      border-bottom: #0096ff 2px solid;
-      color:#0096ff;
+      border-bottom: hsl(257, 44%, 45%) 4px solid;
+      color:hsl(257, 44%, 45%);
     }
 
     .active{
-      border-bottom: #0096ff 2px solid;
-      color:#0096ff;
+      border-bottom: hsl(257, 44%, 45%) 4px solid;
+      color:hsl(257, 44%, 45%);
     }
 
     .submit {
-      font: 15px/0.5 'Microsoft YaHei';
+      font: 15px/0.5 'Helvetica';
       width:100px;
       height: 30px;
       background-color:#ffffff;
@@ -97,8 +112,9 @@
   
     <div class="nav-outer">
       <div class="nav">
-        <!-- <img src="CivicTechYYCLogo-sm.jpg" height="100px" /> -->
+        
         <img src="CivicTechYYCLogo-sm.jpg" />
+        <strong>&nbsp; blockchain experiment 2 (v0.1)</strong>
         <a href="./about.html"><div class="button" id="About"> About </div></a>
         <a href="./share.html"><div class="button" id="Share"> Share </div></a>
         <a href="./"><div class="active button" id="Read"> Read </div></a>
@@ -107,6 +123,14 @@
     </div>
   <center>
     <div id="container">
+      <div class="intro">
+        <h2>
+        Welcome!
+      </h2>
+        <h3>
+          Here are a few acts of kindness by people like you
+        </h3>
+      </div>
     </div>
 
 
@@ -120,7 +144,7 @@
 var EtherShare;
 
 function clickReply(ShareID) {
-  var replyform = '<div class="replyForm"><table width="600px"><tr height="40px"><td align=left valign=top width="100px">Nickname</td><td align=left valign=top><input id="Nickname" type="text" class="shareInput oneLine" /></td></tr><tr height="100px"><td align=left valign=top>Content</td><td align=left valign=top><textarea id="Content" rows="5" class="shareInput"></textarea></td></tr><tr height="40px"><td align=left valign=top>Account</td><td align=left valign=top>              <select class="shareInput oneLine" id="Account">                <option value=null>No accounts found. Please connect to MetaMask or Mist.</option>              </select>            </td>          </tr>          <tr height="40px">             <td align=left valign=top></td>            <td align=left valign=top>              <input type="checkbox" id="AllowUpdated" class="shareCheck" />Allow yourself to update it</td></tr><tr><td></td><td align=left valign=top><button class="submit" onclick="reply('+ShareID+')">Reply '+ShareID+'</button></td></tr></table></div>';
+  var replyform = '<div class="replyForm"><table width="600px"><tr height="40px"><td align=left valign=top width="100px">Nickname</td><td align=left valign=top><input id="Nickname" type="text" class="shareInput oneLine" /></td></tr><tr height="100px"><td align=left valign=top>Content</td><td align=left valign=top><textarea id="Content" rows="5" class="shareInput"></textarea></td></tr><tr height="40px"><td align=left valign=top>Account</td><td align=left valign=top>              <select class="shareInput oneLine" id="Account">                <option value=null>No accounts found. Please log in to MetaMask.</option>              </select>            </td>          </tr>          <tr height="40px">             <td align=left valign=top></td>            <td align=left valign=top>              <input type="checkbox" id="AllowUpdated" class="shareCheck" />Allow yourself to update it</td></tr><tr><td></td><td align=left valign=top><button class="submit" onclick="reply('+ShareID+')">Reply '+ShareID+'</button></td></tr></table></div>';
 
 	web3.eth.getAccounts(function (err, data){
 		console.log(data);
@@ -235,8 +259,9 @@ window.addEventListener('load', function() {
   }
   else {
     console.log("No web3");
-    alert('No web3. You should consider trying MetaMask or Mist. Now turn to the cache page from EtherShare.');
-    location.href="./cache.html";
+    alert("Hi there and welcome! Just wanted to let you know this isn't a typical web page, and you won't see anything without the help of a browser extension. Read on for some instructions :)");
+    document.getElementById("container").innerHTML += '<div class="CacheMode"><h2>How to:</h2><h3>Read the data</h3><ul><li>Install and activate the MetaMask extension for the Google Chrome or Firefox web browsers</li><li>Connect MetaMask to the Rinkeby Test Network.</li>Reload this page. You should then be able to read the data from the blockchain :)</li></ul><h3>Share new data</h3><ul><li>Ensure that an account has been created in MetaMask</li><li>Visit a Rinkeby Test Faucet to obtain test ethers</li><li>Visit the Share page and fill out the form</li><li>Submit the transaction in the MetaMask window</li><li>Wait a while, checking the MetaMask wallet to see that the transaction has been confirmed</li><li>Visit the Read page and see your act of kindness inscribed on the blockchain for all to access</li></ul></div><div><br /><!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/L88-x7EQi8g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> --></div>';
+    // location.href="./cache.html";
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
     //web3js = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
   }
