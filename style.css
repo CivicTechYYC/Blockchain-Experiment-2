@@ -1,0 +1,133 @@
+    html {
+        background-color: rgb(230, 236, 240);
+        padding-bottom: 50px;
+    }
+
+    body {
+        margin: 0;
+        font: 15px/1.5 Arial, 'Helvetica', 'sans-serif';
+        line-height: 20px;
+    }
+    
+    a {
+      color: #fff;
+        font-weight: bold;  
+    }
+
+    .oneShare {
+        width:800; margin-top:10px; padding:15px 10px 15px 20px; background-color:#ffffff; text-align:left;
+        box-shadow:0px 0px 3px rgba(51,51,51,0.2);
+    }
+    
+        .CacheMode {
+        width:800; margin-top:10px; padding:10px 10px 10px 20px; background-color:#ffffff; text-align:left;
+        font: 15px/1.5 'Helvetica';
+        color: #000;
+    }
+    
+            .intro {
+        width:800; margin-top:10px; padding:10px 10px 10px 20px; background-color:hsl(257, 44%, 45%); text-align:left;
+              text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        font: 15px/1.5 'Helvetica';
+        color: #ffffff;
+    }
+
+    .oneReply {
+        <*/ margin-top:5px;
+        border-top: #e2e2e2 px solid;
+        padding-top: 5px; */>
+       margin-top:0px;
+        border-top: #e2e2e2 0px solid;
+        padding-top: 0px;
+    }
+
+    .nav-outer {
+        margin-bottom:20px;
+        background-color:#ffffff;
+        box-shadow:0px 0px 5px rgba(51,51,51,0.5);
+        height: 120px;
+      border-top: 4px solid hsl(257, 44%, 45%);
+    }
+
+    .nav {
+      width: 800;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+    }
+
+    .button {
+      float:right;
+      width:50px;
+      margin-top:75px;
+      margin-left: 15px;
+      margin-right: 15px; 
+      padding-bottom:25px;
+      font: 18px/0.5 'Helvetica';
+      color:#949494;
+      text-align: center;
+    }
+
+    .button:hover{
+      border-bottom: hsl(257, 44%, 45%) 4px solid;
+      color:hsl(257, 44%, 45%);
+    }
+
+    .active{
+      border-bottom: hsl(257, 44%, 45%) 4px solid;
+      color:hsl(257, 44%, 45%);
+    }
+
+    .submit {
+      font: 15px/0.5 'Helvetica';
+      width:100px;
+      height: 30px;
+      background-color:#ffffff;
+      border: #949494 1px solid;
+      color:#949494;
+    }
+
+    .submit:hover {
+      border: #0096ff 1px solid;
+      color:#0096ff;
+    }
+
+    .replyForm {
+    	border-top: #e2e2e2 1px solid;
+        width:800; margin-top:5px; padding-top:5px;
+    }
+
+    .oneLine {
+      height:25px;
+    }
+
+    .shareForm {
+        width:800; margin-top:5px; padding:10px; background-color:#ffffff; text-align:left;
+        box-shadow:0px 0px 3px rgba(51,51,51,0.2);
+    }
+
+    .shareInput {
+      width:100%; background:#f2f2f2;  border: none;
+      padding:2px;
+    }
+
+    .shareCheck {
+      width:12px;height:12px; margin-left:0px; margin:top:5px; margin-bottom:0px; background:#f2f2f2;  border: none;
+    }
+    
+    .dateTime {
+        font: 11px/1.5 'Helvetica';
+        color: #bbb;
+    }
+
+  .about {
+        width:800; margin-top:5px; padding:10px; background-color:#ffffff; text-align:left;
+        box-shadow:0px 0px 3px rgba(51,51,51,0.2);
+    }
+
+    .about a {
+      color: hsl(257, 44%, 45%);
+        font-weight: bold;
+        
+    }
+
