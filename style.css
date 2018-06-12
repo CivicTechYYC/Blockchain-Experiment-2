@@ -33,9 +33,6 @@
     }
 
     .oneReply {
-        <*/ margin-top:5px;
-        border-top: #e2e2e2 px solid;
-        padding-top: 5px; */>
        margin-top:0px;
         border-top: #e2e2e2 0px solid;
         padding-top: 0px;
@@ -88,8 +85,8 @@
     }
 
     .submit:hover {
-      border: #0096ff 1px solid;
-      color:#0096ff;
+      border: hsl(257, 44%, 45%) 1px solid;
+      color:hsl(257, 44%, 45%);
     }
 
     .replyForm {
@@ -112,7 +109,7 @@
     }
 
     .shareCheck {
-      width:12px;height:12px; margin-left:0px; margin:top:5px; margin-bottom:0px; background:#f2f2f2;  border: none;
+      width:12px; height:12px; margin-left:0px; margin-top:5px; margin-bottom:0px; background:#f2f2f2;  border: none;
     }
     
     .dateTime {
@@ -121,7 +118,7 @@
     }
 
   .about {
-        width:800; margin-top:5px; padding:10px; background-color:#ffffff; text-align:left;
+        width:800; margin-top:5px; padding: 10px 10px 10px 20px; background-color:#ffffff; text-align:left;
         box-shadow:0px 0px 3px rgba(51,51,51,0.2);
     }
 
